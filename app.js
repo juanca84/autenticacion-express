@@ -78,6 +78,15 @@ apiRoutes.get('/autenticacion', function(req, res) {
         const payload = {
           admin: user.admin
         };
+        var token = jwt.sign(payload, app.get('superSecret'), {
+          expiresInMinutes: 1440 // expires in 24 hours
+        });
+
+        res.json({
+          success: true,
+          message: 'Exito al generar el Token!',
+          token: token
+        });
       }
     }
   });
