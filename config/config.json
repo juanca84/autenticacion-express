@@ -1,0 +1,26 @@
+{
+  "development": {
+    "username": "agetic",
+    "password": "demo123",
+    "database": "autenticacion_db",
+    "host": "127.0.0.1",
+    "port": 5432,
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "agetic",
+    "password": "demo123",
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "port": 5432,
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "agetic",
+    "password": "demo123",
+    "database": "database_production",
+    "host": "127.0.0.1",
+    "port": 5432,
+    "dialect": "postgres"
+  }
+}
